@@ -22,7 +22,7 @@ const HeaderCardButton = (props) => {
     return () => {
       clearTimeout(timer);
     };
-  }, [cartCtx.totalAmount]);
+  }, [cartCtx.totalAmount,cartCtx.items.length]);
 
   const btnClasses = `${styles.button} ${bump}`;
 
